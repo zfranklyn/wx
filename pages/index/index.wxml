@@ -2,7 +2,7 @@
 
 <import src="../../components/CardComponent.wxml"/>
 
-<view class="container">
+<view class="container" scroll-x="false">
   <scroll-view scroll-y="true" scroll-x="false" class="feed">
     <block 
       wx:for="{{cards}}"

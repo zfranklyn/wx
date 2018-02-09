@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   tapCard: (e) => {
     wx.navigateTo({
-      url: './../book/book',
+      url: './../bookInfo/bookInfo',
     });
   },
   data: {
@@ -31,13 +31,13 @@ Page({
         type: "BOOK",
         surtitle: "童话故事",
         title: "The Little Prince",
-        shortDescription: "",
+        shortDescription: "跟随小王子探索宇宙的星球",
         fullDescription: "",
         link: "/hello_world",
         imgUrl: "./prince.png",
         displaySettings: {
           colorSchemeTop: "dark",
-          colorSchemeBottom: "light",
+          colorSchemeBottom: "dark",
           underlayTop: "underlayOff",
           underlayBottom: "underlayOff",
         }

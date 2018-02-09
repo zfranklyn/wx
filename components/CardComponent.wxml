@@ -1,6 +1,12 @@
 <template name="MainCard">
   <view class="card-container">
-    <view class="main-card" style="background-image: url('{{data.imgUrl}}'); background-size: cover">
+    <view class="main-card">
+      <image 
+        src="{{data.imgUrl}}"
+        mode="aspectFill"
+        class="hero-img"
+        style="height: 100%"
+      />
 
       <view class="underlay-box {{data.displaySettings.underlayTop}} {{data.displaySettings.colorSchemeTop}}">
         <view class="surtitle">

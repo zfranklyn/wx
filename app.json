@@ -2,7 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/book/book"
+    "pages/bookInfo/bookInfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,21 +11,19 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "rgba(0,0,0,1.0)",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "最新"
-      },
+        "text": "发现"
+      }, 
       {
         "pagePath": "pages/logs/logs",
-        "text": "图书馆"
+        "text": "故事集"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "设置"
       }
-
     ]
   }
 }

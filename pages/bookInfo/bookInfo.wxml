@@ -1,0 +1,29 @@
+<!--bookPage.wxml-->
+<view class="container">
+  <view
+    class="bannerhead"
+    style="background-image: url('{{imgUrl}}');"
+  >
+    <view class="underlay-box {{displaySettings.underlayTop}} {{displaySettings.colorSchemeTop}}">
+        <view class="surtitle">
+          {{surtitle}}
+        </view>
+        <view class="title">
+          {{title}}
+        </view>
+      </view>
+
+      <view class="description-box {{displaySettings.underlayBottom}} {{data.displaySettings.colorSchemeBottom}}">
+        {{shortDescription}}
+      </view>
+  </view>
+
+  <view class="intro">
+    <rich-text nodes="{{fullDescriptionNodes}}"/>
+  </view>
+
+  <button class="start-button" bindtap="startStory" loading="{{state.storyLoading}}">
+      进入故事
+  </button>
+
+</view>
