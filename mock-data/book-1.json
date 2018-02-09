@@ -1,0 +1,19 @@
+{
+  "title": "Hello, World!",
+  "author": "Franklyn Zhu",
+  "title-img": "./mock-bg.png",
+  "pages": [
+    {
+      "type": "text",
+      "contents": "Hello, World!"
+    },
+    {
+      "type": "text",
+      "contents": "You're wonderful!"
+    }
+  ],
+  "end-page": {
+    "type": "page",
+    "contents": "Fin."
+  }
+}
