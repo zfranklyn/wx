@@ -4,7 +4,9 @@ const app = getApp()
 
 Page({
   tapCard: (e) => {
-    console.log(e);
+    wx.navigateTo({
+      url: './../book/book',
+    });
   },
   data: {
     cards: [
@@ -53,7 +55,7 @@ Page({
         displaySettings: {
           colorSchemeTop: "dark",
           colorSchemeBottom: "dark",
-          underlayTop: "",
+          underlayTop: "underlayOn",
           underlayBottom: "",
         }
       },

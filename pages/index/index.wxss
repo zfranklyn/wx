@@ -13,6 +13,6 @@
 }
 
 .hover-float {
-  transform: scale(0.98);
+  transform: scale(0.975);
   transition: 0.2s;
 }
