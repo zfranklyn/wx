@@ -1,0 +1,19 @@
+<template name="MainCard">
+  <view class="card-container">
+    <view class="main-card" style="background-image: url('{{data.imgUrl}}'); background-size: cover">
+
+      <view class="underlay-box {{data.displaySettings.underlayTop}} {{data.displaySettings.colorSchemeTop}}">
+        <view class="surtitle">
+          {{data.surtitle}}
+        </view>
+        <view class="title">
+          {{data.title}}
+        </view>
+      </view>
+
+      <view class="description-box {{data.displaySettings.underlayBottom}} {{data.displaySettings.colorSchemeBottom}}">
+        {{data.shortDescription}}
+      </view>
+    </view>
+  </view>
+</template>

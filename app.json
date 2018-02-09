@@ -6,7 +6,25 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "故事精灵",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "rgba(0,0,0,1.0)",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最新"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "图书馆"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "设置"
+      }
+
+    ]
   }
 }

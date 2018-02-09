@@ -1,0 +1,56 @@
+/** CardComponent **/
+
+.card-container {
+  width: 100%;
+  height: 800rpx;
+  padding: 25rpx 50rpx;
+  box-sizing: border-box;
+}
+
+.main-card {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0rpx 18rpx 58rpx rgba(0,0,0,0.25);
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.surtitle {
+  font-size: 24rpx; 
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.title {
+  padding-top: 12rpx;
+  font-size: 58rpx;
+  font-weight: bold;
+  opacity: 1.0;
+}
+
+.light {
+  color: white;
+}
+
+.dark {
+  color: rgba(0,0,0,0.8);
+}
+
+.underlay-box {
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+  padding: 28rpx;
+}
+
+.description-box {
+  position: absolute;
+  font-size: 20rpx;
+  width: 100%;
+  bottom: 0rpx;
+  border-radius: 0rpx 0rpx 30rpx 30rpx;
+  padding: 28rpx;
+}
+
+.underlayOn {
+  background-color: white;
+  opacity: 0.98;
+}

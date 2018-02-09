@@ -3,6 +3,82 @@
 const app = getApp()
 
 Page({
+  tapCard: (e) => {
+    console.log(e);
+  },
+  data: {
+    cards: [
+      {
+        id: "0",
+        type: "BOOK",
+        surtitle: "童话故事",
+        title: "The Matchstick Girl",
+        shortDescription: "卖火柴的小女孩",
+        fullDescription: "Lorem Ipsum Dolor",
+        link: "/hello_world",
+        imgUrl: "./matchstick.png",
+        displaySettings: {
+          colorSchemeTop: "light",
+          colorSchemeBottom: "light",
+          underlayTop: "underlayOff",
+          underlayBottom: "underlayOff",
+        }
+      },      
+      {
+        id: "1",
+        type: "BOOK",
+        surtitle: "童话故事",
+        title: "The Little Prince",
+        shortDescription: "",
+        fullDescription: "",
+        link: "/hello_world",
+        imgUrl: "./prince.png",
+        displaySettings: {
+          colorSchemeTop: "dark",
+          colorSchemeBottom: "light",
+          underlayTop: "underlayOff",
+          underlayBottom: "underlayOff",
+        }
+      },
+      {
+        id: "2",
+        type: "BOOK",
+        colorScheme: "dark",
+        surtitle: "童话故事",
+        title: "The Emperor's New Clothes",
+        shortDescription: "A journey around the world, so many places to see. We'll tour Italy, France, Austria, and London!",
+        fullDescription: "The quick brown fox jumped over the lazy dog",
+        link: "/hello_world",
+        imgUrl: "./emperor.png",
+        displaySettings: {
+          colorSchemeTop: "dark",
+          colorSchemeBottom: "dark",
+          underlayTop: "",
+          underlayBottom: "",
+        }
+      },
+      {
+        id: "3",
+        type: "BOOK",
+        colorScheme: "dark",
+        surtitle: "历史人物",
+        title: "Beethoven: the Deaf Musician",
+        shortDescription: "A story about the famous composer, Ludwig van Beethoven",
+        fullDescription: "The quick brown fox jumped over the lazy dog",
+        link: "/hello_world",
+        imgUrl: "./piano2.png",
+        displaySettings: {
+          colorSchemeTop: "dark",
+          colorSchemeBottom: "dark",
+          underlayTop: "underlayOn",
+          underlayBottom: "underlayOn",
+        }
+      },
+    ]
+  },
+
+
+  /*
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -55,4 +131,5 @@ Page({
       hasUserInfo: true
     })
   }
+  */
 })

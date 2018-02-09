@@ -1,16 +1,28 @@
 <!--index.wxml-->
+
+<import src="../../components/CardComponent.wxml"/>
+
 <view class="container">
-  <view class="toolbar-top">
-    top toolbar
-  </view>
-
-  <scroll-view class="page-text">
-    scroll view
+  <scroll-view scroll-y="true" scroll-x="false" class="feed">
+    <block 
+      wx:for="{{cards}}"
+      wx:for-index="idx"
+      wx:for-item="cardData"
+      wx:key="id"
+    >
+      <view
+        bindtap="tapCard"
+        id="{{idx}}"
+        hover-class="hover-float"
+      >
+        <template
+          is="MainCard"
+          data="{{data: cardData}}"
+        />
+      </view>
+    </block>
   </scroll-view>
-
-  <view class="toolbar-bottom">
-    bottom toolbar
-  </view>
+</view>
 
 <!--
   <view class="userinfo">
@@ -21,4 +33,3 @@
     </block>
   </view>
 -->
-</view>
